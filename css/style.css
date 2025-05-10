@@ -1,0 +1,124 @@
+:root {
+    --color-primary: #f9d72f;
+    --color-background : #e6e6e6;
+    --color-task : #f7f7f7;
+    --color-success: #36d39a;
+    --color-warning: #fbbe23;
+    --color-error: #f87171;
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body{
+    max-width: 1000px;
+    margin: auto;
+}
+.container{
+     width:100%;
+     margin: 40px auto 10px;
+     padding: 20px;
+     display: flex;
+     flex-direction:column;
+     align-items: center;
+     border: 1px solid rgba(31, 38, 135, 0.3);
+     box-shadow: 0 8px 32px 0 rgba(31,38,255,0.18) ;
+     border-radius: 10px;
+}
+h2{
+    font-size: 1.5rem;
+    color: #000000;
+    margin-bottom: 30px;
+}
+.inpute-section{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 40px;
+    
+}
+.inpute-section input{
+    width: 100%;
+    margin-right: 10px;
+    border: solid 1px  #fbbe23 ;
+    padding: 10px;
+    border-radius: 5px;
+    color: gray;
+}
+.inpute-section input:focus{
+    outline: none;
+    border-width: 2px;
+}
+button{
+    border: none;
+    padding: 5px;
+    border-radius:10 15px;
+    background-color:#f9d72f ;
+    cursor: pointer;
+    border-radius: 5px;
+}
+button:hover{
+    opacity: 0.8;
+}
+.todo-operator{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+#delete-all-btn{
+    background-color: var(--color-error);
+}
+table{
+     width: 100%;
+}
+thead{
+    background-color: var(--color-background);
+}
+thead th{
+    padding: 10px;
+}
+thead th:first-child{
+    border-top-left-radius: 10px;
+}
+thead th:last-child{
+    border-top-right-radius: 10px;
+}
+tbody td {
+    background-color: var(--color-task);
+    padding: 5px 10px;
+    text-align: center;
+    width: 25%;
+}
+tbody td button:nth-child(1){
+    background-color: var(--color-warning);
+}
+tbody td button:nth-child(2){
+    background-color: var(--color-success);
+    width: 48px;
+}
+tbody td button:nth-child(3){
+    background-color: var(--color-error);
+}
+#alert-meesge {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    height: 40px;
+}
+.alert{
+    width: 100%;
+    text-align: center;
+    border-radius: 4px;
+    padding: 5px;
+}
+.alert-success{
+    background-color: var(--color-success);
+}
+.alert-error{
+    background-color: var(--color-error);
+}
+#edit-btn{
+    display: none;
+}
